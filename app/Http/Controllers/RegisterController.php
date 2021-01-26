@@ -11,8 +11,8 @@ class RegisterController extends Controller
     }
 
     public function sapa_post(Request $request){
-        $namadepan = $request->fname;
-        $namablkng = $request->lname;
+        $fname = $request->fname;
+        $lname = $request->lname;
         return view('sapa_post',compact('fname','lname'));
     }
 }

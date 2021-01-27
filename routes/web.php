@@ -20,6 +20,20 @@ Route::get('/form', function () {
 });
 
 Route::get('/home', 'RegisterController@home');
-
-
 Route::get('/sapa_post', 'RegisterController@sapa_post');
+
+Route::get('/master', function(){
+    return view('adminlte.master');
+});
+
+Route::get('/items',function(){
+    return view('items.index');
+});
+
+Route::get('/items/table',function(){
+    return view('items.table');
+});
+
+Route::get('/items/task',function(){
+    return view('items.task');
+});

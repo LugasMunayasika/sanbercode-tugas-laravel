@@ -23,7 +23,6 @@ class CreateLikesDislikesQuestionsTable extends Migration
             $table->unsignedBigInteger('questions_id');
             $table->foreign('questions_id')->references('id')->on('questions');
             
-            $table->timestamps();
         });
     }
 

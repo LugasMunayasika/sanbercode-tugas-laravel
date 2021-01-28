@@ -15,7 +15,6 @@ class CreateAnswersTable extends Migration
     {
         Schema::create('answers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('judul');
             $table->longText('isi');
 
             $table->unsignedBigInteger('profiles_id');

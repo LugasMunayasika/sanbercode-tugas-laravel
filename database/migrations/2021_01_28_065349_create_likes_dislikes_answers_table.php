@@ -22,8 +22,6 @@ class CreateLikesDislikesAnswersTable extends Migration
 
             $table->unsignedBigInteger('answers_id');
             $table->foreign('answers_id')->references('id')->on('answers');
-
-            $table->timestamps();
         });
     }
 

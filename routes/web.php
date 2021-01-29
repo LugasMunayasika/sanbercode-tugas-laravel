@@ -37,3 +37,6 @@ Route::get('/items/table',function(){
 Route::get('/items/task',function(){
     return view('items.task');
 });
+
+Route::get('/questions/create','QuestionsController@create');
+Route::get('/questions','QuestionsController@store');

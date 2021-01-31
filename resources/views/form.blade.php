@@ -8,7 +8,7 @@
 <body>
     <h1>Buat Account Baru</h1>
     <h2>Sign Up Form</h2>
-    <form action="/sapa_post" method="POST">
+    <form action="/selamat" method="POST">
         @csrf
         <label>First name: </label><br><br>
         <input type="text" name="fname"><br><br>
@@ -31,7 +31,7 @@
         <input type="checkbox">Other<br><br>
         <label>Bio: </label><br><br>
         <textarea name="bio" cols="30" rows="10"></textarea><br><br>
-        <input type="submit">
-    </form  >
+        <input type="submit" value = "Sign Up">
+    </form>
 </body>
 </html>

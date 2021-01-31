@@ -10,10 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//pembahasan intro laravel
+//pembahasan intro laravel Pekan 3 day 2 Intro Laravel 
 Route::get('/', 'HomeController@index');
 Route::get('/register', 'AuthController@register');
 Route::post('/selamat', 'AuthController@form');
+
+
+//pembahasan intro laravel Pekan 3 day 3 Templating Laravel 
+
 //
 Route::get('/master', function(){
     return view('adminlte.master');
